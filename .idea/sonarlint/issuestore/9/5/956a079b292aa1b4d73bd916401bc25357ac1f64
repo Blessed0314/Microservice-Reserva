@@ -1,0 +1,12 @@
+
+ï	java:S116"SRename this field "id_hotel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úûƒÒ8¿›£–à2J$e8a33df5-38b5-4651-aa18-2b6ce81ebb85
+ñ	java:S116"TRename this field "id_flight" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µŒ√ı8¿›£–à2J$d4a1daca-f810-4ca9-a112-35fd79c44353
+ö	java:S116)"XRename this field "amount_people" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å˚–ê8ó¿§–à2J$49c3ad1b-10b7-4bcc-a784-c9430b4a317a
+ô	java:S116+"WRename this field "amount_night" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©Ç¸ì8ó¿§–à2J$25208947-4d41-4357-ab80-f287d95503f5
+õ	java:S116<"TRename this field "net_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒª™ö˝ˇˇˇˇ8ó¿§–à2J$d0461ffc-c7ae-49ef-8d32-41e18e05f7e6
+Ö	java:S107-"CConstructor has 12 parameters, which is greater than 11 authorized.(ÂÔÊß8¥Ô§–à2J$53961d14-3c0c-4854-8527-fdc61ea3d4cc
+ê	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•µ∂û8ï‚•–à2J$e22fc807-754b-4d07-9c9d-8bcde1f9fafe
+ï	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü«êÒ˙ˇˇˇˇ8ñ‚•–à2J$105f975b-9bfa-458f-b43c-9a2853ce347a
+ê	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ‹™Æ8ó‚•–à2J$9010d43c-3dfb-42dd-8e28-d8c63e89925c
+ï	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ∂√îˇˇˇˇˇ8ó‚•–à2J$9f8829a7-af74-4904-a3b7-c99402a16f0b
+ï	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Úûìµ˝ˇˇˇˇ8ó‚•–à2J$c4fa2a3c-4b1f-4d11-a47f-a7f47e3666b9

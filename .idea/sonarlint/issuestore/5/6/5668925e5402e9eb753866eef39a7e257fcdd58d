@@ -1,0 +1,7 @@
+
+•	java:S116"SRename this field "id_hotel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÄñ8¿‘Ğˆ2J$219a6f1b-d1a4-4fa5-86ac-8a4e224818ba
+–	java:S116"TRename this field "id_flight" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÎÃõ8À‘Ğˆ2J$052f76c0-9eff-4e84-9fa8-a535db7a09c1
+§	java:S116"`Rename this field "identification_number" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ª†¥ÿÿÿÿÿ8Â‘Ğˆ2J$2bc4811d-de06-493b-abaf-775426d8939e
+š	java:S116"XRename this field "amount_people" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûĞ8Ã‘Ğˆ2J$d001b291-aaa2-4df2-aaee-7e7a2f61bf89
+™	java:S116"WRename this field "amount_night" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©‚ü“8Ä‘Ğˆ2J$af60664b-70fd-4929-ab94-eeb140c4cfcf
+›	java:S116"TRename this field "net_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä»ªšıÿÿÿÿ8Å‘Ğˆ2J$b68f86ae-3c13-4a41-9572-e84929457b8e
