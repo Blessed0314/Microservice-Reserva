@@ -4,7 +4,6 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/microservice_reservation" />
         <option name="gradleHome" value="$PROJECT_DIR$/../../../../../Program Files/workspace/gradle-8.7-bin/gradle-8.7" />
         <option name="gradleJvm" value="#JAVA_HOME" />
