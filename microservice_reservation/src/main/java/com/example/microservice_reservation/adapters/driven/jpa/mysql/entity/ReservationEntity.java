@@ -1,7 +1,9 @@
 package com.example.microservice_reservation.adapters.driven.jpa.mysql.entity;
 
-import jakarta.persistence.*;
+
 import lombok.*;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "reservation")

@@ -21,11 +21,15 @@ public class AddReservationRequest {
 
     private final Integer amount_people;
 
-    private final String amount_night;
+    private final Integer amount_night;
 
     private final Float net_price;
 
     private final boolean status;
+
+    private final Integer netValue;
+
+    private final boolean isActive;
 
 
 

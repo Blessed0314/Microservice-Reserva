@@ -1,0 +1,5 @@
+
+r	java:S106#"+Replace this use of System.out by a logger.(•Ïêúþÿÿÿÿ8¹•¦Ýˆ2J$e407234e-aa20-4bd7-9061-1763b06ae910
+m	java:S106$"+Replace this use of System.out by a logger.(û€Òé8´É¦Ýˆ2J$9b6a9448-f66e-4a58-8753-a7d30bdc65d1
+“
+java:S1128"KRemove this unused import 'org.springframework.aop.scope.ScopedProxyUtils'.(õÕ˜·ýÿÿÿÿ8Ñä£Ýˆ2J$5c8d8ea1-89d4-4482-b7e9-eeec0a82216c

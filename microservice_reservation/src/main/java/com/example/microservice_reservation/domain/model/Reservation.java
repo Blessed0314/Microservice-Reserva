@@ -4,13 +4,17 @@ public class Reservation {
 
     private final Long id;
 
-    private final Long idReservationHotel;
+    private  Long idReservationHotel;
 
     private final String name;
 
     private final String date;
 
     private final Long id_hotel;
+
+    private final Integer netValue;
+
+    private final boolean isActive;
 
     private final Long id_flight;
 
@@ -26,7 +30,7 @@ public class Reservation {
         return amount_people;
     }
 
-    public String getAmount_night() {
+    public Integer getAmount_night() {
         return amount_night;
     }
 
@@ -40,30 +44,31 @@ public class Reservation {
 
     private final Integer amount_people;
 
-    private final String amount_night;
+    private final Integer amount_night;
 
-    public Reservation(Long id, Long idReservationHotel, String name, String date, Long id_hotel, Long id_flight, Integer amount_people, String amount_night, Float net_price, boolean status, Long idReservationFlight, String identificationNumber) {
-        this.id = id;
-        this.idReservationHotel = idReservationHotel;
-        this.name = name;
-        this.date = date;
-        this.id_hotel = id_hotel;
-        this.id_flight = id_flight;
-        this.amount_people = amount_people;
-        this.amount_night = amount_night;
-        this.net_price = net_price;
-        this.status = status;
-        this.idReservationFlight = idReservationFlight;
-        this.identificationNumber = identificationNumber;
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public Integer getNetValue() {
+        return netValue;
     }
 
     private final Float net_price;
+
+    public void setIdReservationHotel(Long idReservationHotel) {
+        this.idReservationHotel = idReservationHotel;
+    }
+
+    public void setIdReservationFlight(Long idReservationFlight) {
+        this.idReservationFlight = idReservationFlight;
+    }
 
     private final boolean status;
 
 
 
-    private final Long idReservationFlight;
+    private  Long idReservationFlight;
 
     public Long getId() {
         return id;
@@ -91,6 +96,20 @@ public class Reservation {
 
     private final String identificationNumber;
 
-
-
+    public Reservation(Long id, Long idReservationHotel, String name, String date, Long id_hotel, Integer netValue, boolean isActive, Long id_flight, Integer amount_people, Integer amount_night, Float net_price, boolean status, Long idReservationFlight, String identificationNumber) {
+        this.id = id;
+        this.idReservationHotel = idReservationHotel;
+        this.name = name;
+        this.date = date;
+        this.id_hotel = id_hotel;
+        this.netValue = netValue;
+        this.isActive = isActive;
+        this.id_flight = id_flight;
+        this.amount_people = amount_people;
+        this.amount_night = amount_night;
+        this.net_price = net_price;
+        this.status = status;
+        this.idReservationFlight = idReservationFlight;
+        this.identificationNumber = identificationNumber;
+    }
 }

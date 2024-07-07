@@ -3,6 +3,7 @@ package com.example.microservice_reservation.configuration;
 import com.example.microservice_reservation.adapters.driven.jpa.mysql.adapter.ReservationAdapter;
 import com.example.microservice_reservation.adapters.driven.jpa.mysql.mapper.IReservationEntityMapper;
 import com.example.microservice_reservation.adapters.driven.jpa.mysql.repository.IReservationRepository;
+import com.example.microservice_reservation.adapters.services.ClientService;
 import com.example.microservice_reservation.domain.api.IReservationServicePort;
 import com.example.microservice_reservation.domain.api.usecase.ReservationUseCase;
 import com.example.microservice_reservation.domain.spi.IReservationPersistencePort;
@@ -17,9 +18,11 @@ public class BeanConfiguration {
 
     private final IReservationEntityMapper reservationEntityMapper;
 
+    private final ClientService clientService;
+
     @Bean
     public IReservationPersistencePort reservationsPersistencePort() {
-        return new ReservationAdapter(reservationRepository, reservationEntityMapper);
+        return new ReservationAdapter(reservationRepository, reservationEntityMapper,clientService);
     }
 
     @Bean

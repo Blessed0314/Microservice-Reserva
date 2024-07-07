@@ -6,6 +6,7 @@ import com.example.microservice_reservation.domain.api.IReservationServicePort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,7 +20,7 @@ public class ReservationController {
     private final IReservationRequestMapper reservationRequestMapper;
 
     @PostMapping("/add")
-    public ResponseEntity<Void> addReservation(AddReservationRequest addReservationRequest) {
+    public ResponseEntity<Void> addReservation(@RequestBody  AddReservationRequest addReservationRequest) {
         reservationService.saveReservation(reservationRequestMapper.toReservation(addReservationRequest));
         return ResponseEntity.ok().build();
     }

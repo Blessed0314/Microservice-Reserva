@@ -11,5 +11,6 @@ import org.mapstruct.Mapper;
 public interface IReservationRequestMapper {
 
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "identificationNumber", source = "identification_number")
     Reservation toReservation(AddReservationRequest addReservationRequest);
 }
