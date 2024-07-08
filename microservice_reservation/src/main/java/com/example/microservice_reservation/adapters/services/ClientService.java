@@ -25,4 +25,12 @@ public class ClientService {
     public Long addReservationFlight(AddReservationFlightRequest request) {
         return flightClient.addReservation(request);
     }
+
+    public void deleteReservationHotel(Long id) {
+        hotelClient.deleteReservation(id);
+    }
+
+    public void deleteReservationFlight(Long id) {
+        flightClient.deleteReservation(id);
+    }
 }

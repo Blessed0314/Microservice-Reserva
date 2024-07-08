@@ -1,5 +1,6 @@
 package com.example.microservice_reservation.adapters.driven.jpa.mysql.adapter;
 
+import com.example.microservice_reservation.adapters.driven.jpa.mysql.entity.ReservationEntity;
 import com.example.microservice_reservation.adapters.driven.jpa.mysql.mapper.IReservationEntityMapper;
 import com.example.microservice_reservation.adapters.driven.jpa.mysql.repository.IReservationRepository;
 import com.example.microservice_reservation.adapters.driving.http.dto.request.AddReservationFlightRequest;
@@ -9,6 +10,8 @@ import com.example.microservice_reservation.domain.model.Reservation;
 import com.example.microservice_reservation.domain.spi.IReservationPersistencePort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.aop.scope.ScopedProxyUtils;
+
+import java.util.List;
 
 @RequiredArgsConstructor
 public class ReservationAdapter implements IReservationPersistencePort {
@@ -23,26 +26,48 @@ public class ReservationAdapter implements IReservationPersistencePort {
     @Override
     public void saveReservation(Reservation reservation) {
 
-        AddReservationFlightRequest addReservationFlightRequest = new AddReservationFlightRequest(reservation.getId_flight(),
-                reservation.getAmount_people(), reservation.getNetValue(), reservation.isActive());
+        System.out.println("reservation = " + reservation.getId_flight());
 
-        Long idFlight = clientService.addReservationFlight(addReservationFlightRequest);
+        if (reservation.getId_flight()!=null){
+            AddReservationFlightRequest addReservationFlightRequest = new AddReservationFlightRequest(reservation.getId_flight(),
+                    reservation.getAmount_people());
 
-        AddReservationHotelRequest addReservationHotelRequest = new AddReservationHotelRequest(reservation.getId_hotel(),
-                reservation.getAmount_people(),reservation.getAmount_night());
+            Long idFlight = clientService.addReservationFlight(addReservationFlightRequest);
+            reservation.setIdReservationFlight(idFlight);
+        }
 
-        Long idHotel = clientService.addReservationHotel(addReservationHotelRequest);
-        System.out.println("idHotel: "+idHotel);
-        System.out.println("idFlight: "+idFlight);
+        if (reservation.getId_hotel()!=null){
+            AddReservationHotelRequest addReservationHotelRequest = new AddReservationHotelRequest(reservation.getId_hotel(),
+                    reservation.getAmount_people(),reservation.getAmount_night());
 
-
-
-
-        reservation.setIdReservationFlight(idFlight);
-
-        reservation.setIdReservationHotel(idHotel);
+            Long idHotel = clientService.addReservationHotel(addReservationHotelRequest);
+            reservation.setIdReservationHotel(idHotel);
+        }
 
         reservationRepository.save(reservationEntityMapper.toReservationEntity(reservation));
+
+    }
+
+    @Override
+    public void deleteReservation(Long id) {
+        ReservationEntity reservation = reservationRepository.findById(id).get();
+
+        System.out.println("reservation.getId_reservation_flight() = " + reservation.getId_reservation_flight());
+
+        if (reservation.getId_reservation_flight()!=null){
+            clientService.deleteReservationFlight(reservation.getId_reservation_flight());
+        }
+        if (reservation.getId_reservation_hotel()!=null){
+            clientService.deleteReservationHotel(reservation.getId_reservation_hotel());
+        }
+        reservationRepository.deleteById(id);
+    }
+
+    @Override
+    public List<Reservation> getReservation(String identificationNumber) {
+
+        List<ReservationEntity> reservationEntity = reservationRepository.findByIdentificationNumber(identificationNumber);
+        return reservationEntityMapper.toReservation(reservationEntity);
 
     }
 }

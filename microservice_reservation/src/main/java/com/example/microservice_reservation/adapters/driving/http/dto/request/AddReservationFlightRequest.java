@@ -9,7 +9,7 @@ public class AddReservationFlightRequest {
     private final Long idFlight;
 
     private final int people;
-    private final int netValue;
-    private final boolean isActive;
+
+
 
 }

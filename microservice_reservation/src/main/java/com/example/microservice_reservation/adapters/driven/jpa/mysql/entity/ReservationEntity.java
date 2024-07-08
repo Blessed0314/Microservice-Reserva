@@ -25,7 +25,7 @@ public class ReservationEntity {
     private Long id_reservation_flight;
 
     @Column
-    private String identification_number;
+    private String identificationNumber;
 
     @Column
     private String name;
