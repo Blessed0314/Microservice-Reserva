@@ -1,12 +1,13 @@
 
-•	java:S116"SRename this field "id_hotel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÄñ8ÓÖÉöˆ2J$cbe4a8ad-6a83-4308-be2d-b81115c58666
-–	java:S116"TRename this field "id_flight" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÎÃõ8ÔÖÉöˆ2J$46c6ac1d-6ef8-4b05-ad62-6b96f2afda99
-š	java:S116A"XRename this field "amount_people" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûĞ8ÔÖÉöˆ2J$f826a45d-8a77-4add-b430-7384e954dfeb
-	java:S116C"WRename this field "amount_night" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§¥Ñùüÿÿÿÿ8ÔÖÉöˆ2J$d089b494-245d-4eb0-9b47-ed885bf83ebe
-›	java:S116I"TRename this field "net_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä»ªšıÿÿÿÿ8ÔÖÉöˆ2J$6a08e0dd-e5d9-46e1-a012-f086fee6fe68
-	java:S100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥µ¶8ØÖÉöˆ2J$8d8578b0-827f-4e53-aaeb-a6a16c885e39
-•	java:S100/"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÇñúÿÿÿÿ8ÙÖÉöˆ2J$9917b10d-2b28-4a0f-8807-ef6b8c1d91a9
-	java:S1003"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öÜª®8ÙÖÉöˆ2J$562ce768-6edd-4094-a503-bc24f8bc3c8f
-	java:S1007"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Œ–Í8ÙÖÉöˆ2J$278016fa-f4f2-4180-8354-b50712f90741
-•	java:S100;"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò“µıÿÿÿÿ8ÚÖÉöˆ2J$c34a3036-cc68-4549-b90e-d14fbea9972c
-•	java:S100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞŠß¬ÿÿÿÿÿ8©Ûêöˆ2J$e26bf7a2-cbb2-4087-a658-2c8dc3a8fb6e
+	java:S116"SRename this field "id_hotel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÄñJ$f24d7fef-f415-4980-814b-ab82c432b381
+	java:S116"TRename this field "id_flight" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÎÃõJ$99512ad8-ed09-4218-93b7-34e63f28970c
+“	java:S116M"XRename this field "amount_people" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûĞJ$742624db-1f03-438a-901a-0398de37a811
+—	java:S116O"WRename this field "amount_night" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§¥ÑùüÿÿÿÿJ$5cf6f44b-42e4-4639-8f0a-846bd25242d3
+”	java:S116U"TRename this field "net_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä»ªšıÿÿÿÿJ$cb931d9d-322c-407f-8919-0b8277c56dbe
+…	java:S107&"CConstructor has 14 parameters, which is greater than 11 authorized.(Ò»ê§8†äöÌŠ2J$997b5a97-c9b9-414e-807b-596f53cd2253
+‰	java:S1007"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥µ¶J$c5d562ce-d3d0-47bc-bea6-51d0a51b78a9
+	java:S100;"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÇñúÿÿÿÿJ$06f336f3-c834-4d9e-9b93-520b6c273000
+‰	java:S100?"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öÜª®J$611f5106-9806-4255-b9be-95a153da9196
+‰	java:S100C"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Œ–ÍJ$d33c8fb3-d046-408e-9bb0-164b57333505
+	java:S100G"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò“µıÿÿÿÿJ$2384819b-a1f7-4e69-b988-828632804205
+	java:S100Q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞŠß¬ÿÿÿÿÿJ$89f2b207-83f4-495a-8614-7c0dd9e8109b

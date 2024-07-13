@@ -29,8 +29,8 @@ public class ReservationController {
         return ResponseEntity.ok().build();
     }
 
-    @DeleteMapping("/delete")
-    public ResponseEntity<Void> deleteReservation(@RequestBody Long id) {
+    @PatchMapping("/delete/{id}")
+    public ResponseEntity<Void> deleteReservation(@PathVariable Long id) {
         reservationService.deleteReservation(id);
         return ResponseEntity.ok().build();
     }

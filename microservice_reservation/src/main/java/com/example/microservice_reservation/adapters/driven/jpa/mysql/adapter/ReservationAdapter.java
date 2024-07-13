@@ -44,6 +44,8 @@ public class ReservationAdapter implements IReservationPersistencePort {
             reservation.setIdReservationHotel(idHotel);
         }
 
+        reservation.setActive(true);
+
         reservationRepository.save(reservationEntityMapper.toReservationEntity(reservation));
 
     }
@@ -60,14 +62,16 @@ public class ReservationAdapter implements IReservationPersistencePort {
         if (reservation.getId_reservation_hotel()!=null){
             clientService.deleteReservationHotel(reservation.getId_reservation_hotel());
         }
-        reservationRepository.deleteById(id);
+        reservation.setActive(false);
+
+        reservationRepository.save(reservation);
     }
 
     @Override
     public List<Reservation> getReservation(String identificationNumber) {
 
         List<ReservationEntity> reservationEntity = reservationRepository.findByIdentificationNumber(identificationNumber);
-        return reservationEntityMapper.toReservation(reservationEntity);
+        return reservationEntityMapper.toReservationList(reservationEntity);
 
     }
 }

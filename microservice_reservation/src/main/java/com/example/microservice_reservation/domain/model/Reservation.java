@@ -21,20 +21,32 @@ public class Reservation {
 
     private final String startDate;
 
+    public Boolean getActive() {
+        return active;
+    }
+
     private final String endDate;
+
+    public void setActive(Boolean active) {
+        this.active = active;
+    }
 
     private final String identificationNumber;
 
+    private Boolean active;
 
-    public Reservation(Long id, String name, String date, Long id_hotel, Long id_flight, String startDate, String endDate, String identificationNumber, Integer amount_people, Integer amount_night, Float net_price) {
+    public Reservation(Long id, Long idReservationHotel, String name, String date, Long id_hotel, Long idReservationFlight, Long id_flight, String startDate, String endDate, String identificationNumber, Boolean active, Integer amount_people, Integer amount_night, Float net_price) {
         this.id = id;
+        this.idReservationHotel = idReservationHotel;
         this.name = name;
         this.date = date;
         this.id_hotel = id_hotel;
+        this.idReservationFlight = idReservationFlight;
         this.id_flight = id_flight;
         this.startDate = startDate;
         this.endDate = endDate;
         this.identificationNumber = identificationNumber;
+        this.active = active;
         this.amount_people = amount_people;
         this.amount_night = amount_night;
         this.net_price = net_price;

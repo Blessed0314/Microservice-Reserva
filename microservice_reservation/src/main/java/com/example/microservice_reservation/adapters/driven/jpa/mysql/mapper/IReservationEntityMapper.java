@@ -19,5 +19,5 @@ public interface IReservationEntityMapper {
     Reservation toReservation(ReservationEntity reservationEntity);
 
 
-    List<Reservation> toReservation(List<ReservationEntity> reservationEntity);
+    List<Reservation> toReservationList(List<ReservationEntity> reservationEntity);
 }

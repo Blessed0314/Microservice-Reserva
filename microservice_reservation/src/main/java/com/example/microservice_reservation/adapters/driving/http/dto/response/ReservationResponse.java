@@ -14,4 +14,6 @@ public class ReservationResponse {
 
     private final String identificationNumber;
 
+    private Boolean active;
+
 }

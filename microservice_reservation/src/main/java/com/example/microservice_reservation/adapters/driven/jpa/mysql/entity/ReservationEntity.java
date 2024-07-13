@@ -32,4 +32,7 @@ public class ReservationEntity {
 
     @Column
     private String date;
+
+    @Column
+    private Boolean active;
 }
